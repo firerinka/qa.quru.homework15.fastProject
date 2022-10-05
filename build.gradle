@@ -4,7 +4,7 @@ plugins {
 }
 
 def allureVersion = "2.19.0",
-    slf4jVersion = "1.7.36",
+    slf4jVersion = '2.0.3',
     jupiterVersion = "5.9.0",
     selenideVersion = '6.7.4',
     aspectjVersion = "1.9.9.1"
