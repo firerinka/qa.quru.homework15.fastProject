@@ -1,4 +1,11 @@
 # Проект по автоматизации тестирования страницы Jetbrains Products
+## :pushpin: Содержание:
+
+- [Использованный стек технологий](#computer-использованный-стек-технологий)
+- [Запуск тестов](#running_woman-запуск-тестов)
+- [Пример Allure-отчета](#-пример-allure-отчета)
+- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+- [Видео примера запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
 
 ## :computer: Использованный стек технологий
 
@@ -83,7 +90,7 @@ test
 <img width="70%" title="Telegram Notifications" src="images/screenshots/notificationExample.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Видео примера запуска теста в Selenoid
 
 К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
