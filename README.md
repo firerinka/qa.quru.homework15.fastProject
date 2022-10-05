@@ -62,7 +62,7 @@ test
 * <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>1920x1080</code>.
 * <code>REMOTE_BROWSER_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 
-## <img width="2%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure_Report.svg"> Пример Allure-отчета
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure_Report.svg"> Пример Allure-отчета
 ### Overview
 
 <p align="center">
@@ -75,7 +75,7 @@ test
 <img title="Test Results in Alure" src="images/screenshots/allureReportTests.png">
 </p>
 
-### <img width="2%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне.
 
@@ -83,7 +83,7 @@ test
 <img width="70%" title="Telegram Notifications" src="images/screenshots/notificationExample.png">
 </p>
 
-### <img width="2%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
 
 К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
