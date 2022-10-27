@@ -38,36 +38,41 @@ Allure-отчет включает в себя:
 ## :running_woman: Запуск тестов
 
 ### Локальный запуск тестов
-С параметрами по умолчанию
 ```
-gradle clean test
+gradle clean test -Denv=local
 ```
 
-При необходимости можно изменить дефолтные параметры запуска
+При необходимости можно переопределить параметры запуска
 ```
-clean
-test
--Dbrowser_name=${BROWSER_NAME}
--Dbrowser_version=${BROWSER_VERSION}
--Dbrowser_size=${BROWSER_SIZE}
+gradle clean test
+-Denv=local
+-Dbrowser=${BROWSER_NAME}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DbaseUrl=${BASE_URL}
 ```
 
 ### Запуск тестов на удаленном браузере
+```
+gradle clean test -Denv=remote
+```
+При необходимости также можно переопределить параметры запуска
 
 ```
-clean
-test
--Dbrowser_name=${BROWSER_NAME}
--Dbrowser_version=${BROWSER_VERSION}
--Dbrowser_size=${BROWSER_SIZE}
--Dselenide.remote=${REMOTE_BROWSER_URL}
+gradle clean test -Denv=remote
+-Dbrowser=${BROWSER_NAME}
+-DbrowserМersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DbaseUrl=${BASE_URL}
+-DremoteUrl=${REMOTE_BROWSER_URL}
 ```
 
 ### Параметры сборки
 
 * <code>BROWSER_NAME</code> – браузер, в котором будут выполняться тесты. По-умолчанию - <code>chrome</code>.
 * <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты. По-умолчанию - <code>105.0</code>.
-* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>1920x1080</code>.
+* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты.
+* <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение. По-умолчанию - <code>1920x1080</code>.
 * <code>REMOTE_BROWSER_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="images/logo/Jenkins.svg"> Сборка в Jenkins
