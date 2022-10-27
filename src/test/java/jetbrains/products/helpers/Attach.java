@@ -2,6 +2,7 @@ package jetbrains.products.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
+import jetbrains.products.config.ProjectConfiguration;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -38,14 +39,14 @@ public class Attach {
 
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
-    public static String addVideo() {
+    public static String addVideo(String videoStorageUrl) {
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
-                + getVideoUrl()
+                + getVideoUrl(videoStorageUrl)
                 + "' type='video/mp4'></video></body></html>";
     }
 
-    public static URL getVideoUrl() {
-        String videoUrl = "https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4";
+    public static URL getVideoUrl(String videoStorageUrl) {
+        String videoUrl = videoStorageUrl + getSessionId() + ".mp4";
 
         try {
             return new URL(videoUrl);
